@@ -1,0 +1,29 @@
+Source: wine-amd64
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: otherosfs
+Priority: optional
+Homepage: https://github.com/Kron4ek/Wine-Builds
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               dh-exec,
+               lintian,
+               wget
+
+Package: wine-amd64
+Architecture: arm64
+Section: otherosfs
+Priority: optional
+Provides:
+ wine, wine64, wine32
+Depends:  box64:arm64,
+          box86:armhf,
+          libc6:armhf (>= 2.34),
+          libc6:arm64 (>= 2.34),
+Description: Windows API implementation - standard suite
+ Wine is a free MS-Windows API implementation.
+ .
+ This package provides essential wrappers and convenience tools for the
+ standard Wine components. It also employs the Debian alternatives system to
+ provide the usual command names, e.g. "wine" instead of "wine-stable".
+ Repackaged from amd64 wine (https://github.com/Kron4ek/Wine-Builds)
