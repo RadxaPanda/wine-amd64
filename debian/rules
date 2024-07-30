@@ -8,3 +8,12 @@ include /usr/share/dpkg/architecture.mk
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
+
+override_dh_strip:
+	# Do nothing, skip it
+
+override_dh_makeshlibs:
+	# Do nothing, skip it
+
+override_dh_shlibdeps:
+	# Do nothing, skip it
