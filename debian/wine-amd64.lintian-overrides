@@ -1,0 +1,10 @@
+# We want the x86 version of wine not arm
+wine-amd64: binary-from-other-architecture
+wine-amd64: library-not-linked-against-libc
+wine-amd64: no-code-sections
+wine-amd64: statically-linked-binary
+wine-amd64: unstripped-binary-or-object
+wine-amd64: duplicate-font-file
+wine-amd64: no-manual-page
+wine-amd64: script-with-language-extension
+wine-amd64: shared-library-lacks-prerequisites
